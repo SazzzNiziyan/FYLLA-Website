@@ -1,0 +1,282 @@
+@font-face {
+  font-family: Syne;
+  src: url(./Syne.ttf);
+}
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 255, 250);
+}
+
+html {
+  font-family: Syne;
+}
+
+body {
+  padding: 1rem;
+}
+main {
+  padding: 1rem;
+  padding-top: 3rem;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.view-1 {
+  width: 100%;
+  p {
+    font-weight: 400;
+    opacity: 0.8;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-weight: 500;
+    font-size: 3.9rem;
+    width: 70%;
+    transform: scaleY(0.89);
+    line-height: 1em;
+    margin-bottom: 1rem;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+}
+
+svg {
+  width: 5rem;
+  margin-top: 2rem;
+}
+
+.view-2 {
+  .top {
+    p {
+      margin-top: 2em;
+    }
+
+    h1 {
+      font-weight: 500;
+      margin-top: 1.4rem;
+      font-size: 3rem;
+      transform: scaleY(0.89);
+      width: 100%;
+      line-height: 1em;
+      margin-bottom: 1em;
+    }
+
+    .button {
+      padding: 0.7rem 2rem;
+      border-radius: 0.6rem;
+      background-color: rgb(0, 0, 0);
+      color: rgb(254, 255, 247);
+      font-weight: 600;
+      text-decoration: none;
+    }
+  }
+  .line {
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    width: 100%;
+    margin-top: 2.5rem;
+  }
+  .bottom {
+    h1 {
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 2rem;
+      transform: scaleY(0.89);
+      line-height: 1em;
+      margin-top: 1rem;
+    }
+    p {
+      margin-top: 1em;
+      opacity: 0.8;
+    }
+  }
+}
+
+.view-3 {
+  .our-team {
+    h1 {
+      font-weight: 500;
+      font-size: 3rem;
+      transform: scaleY(0.89);
+      line-height: 1em;
+      margin-top: 2rem;
+    }
+
+    p {
+      margin-top: 0.6rem;
+      font-size: 1.3rem;
+      opacity: 0.8;
+      line-height: 1.35em;
+    }
+  }
+
+  .our-team-members {
+    padding: 0% 0.5rem;
+    video {
+      margin-top: 2.5rem;
+      width: 100%;
+      height: 15em;
+      object-fit: cover;
+      border-radius: 1rem;
+    }
+    h1 {
+      font-weight: 400;
+      font-size: 1.6rem;
+      transform: scaleY(0.89);
+      line-height: 1em;
+      margin-top: 1rem;
+    }
+    p {
+      margin-top: 0.7em;
+      transform: scaleY(1.1);
+      opacity: 0.8;
+    }
+  }
+}
+
+.line-2 {
+  border: 1px solid rgba(0, 0, 0, 0.454);
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.contact {
+  margin-bottom: 2.5rem;
+  svg {
+    width: 4rem;
+    margin: 0.5em;
+    margin-top: 1.5em;
+  }
+  p {
+    margin: 2rem 0 1rem 0;
+    opacity: 0.8;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    transform: scaleY(1.3);
+  }
+  h1 {
+    font-size: 3.3rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+  }
+  h3 {
+    font-weight: 100;
+    opacity: 0.7;
+    font-size: 1.3rem;
+    margin-bottom: 2em;
+  }
+  .button {
+    padding: 0.55rem 1.1rem;
+    border-radius: 0.5rem;
+    background-color: rgb(0, 0, 0);
+    color: rgb(254, 255, 250);
+    word-spacing: 0.7em;
+    font-weight: 700;
+    font-size: 0.9em;
+    font-family: Roboto;
+    width: fit-content;
+    text-decoration: none;
+    font-weight: 100;
+  }
+}
+
+.view-4 {
+  .address {
+    .logo {
+      display: flex;
+
+      svg {
+        height: 3.7rem;
+        margin-left: -0.6rem;
+      }
+
+      p {
+        margin-top: 3rem;
+        font-weight: 500;
+        font-size: 1.7rem;
+      }
+    }
+
+    h1 {
+      font-size: 1rem;
+      margin: 1rem 0 2.5rem;
+      font-weight: 100;
+      font-family: False;
+      opacity: 0.7;
+    }
+
+    .country-circle {
+      display: flex;
+      gap: 1rem;
+      h2 {
+        font-size: 0.9em;
+        padding: 0.35em;
+        text-align: center;
+        opacity: 0.63;
+        font-family: Roboto Mono;
+        border-radius: 50%;
+        border: 1px solid black;
+        height: 2.1em;
+        width: 2.1em;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 1.6em;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .page-link {
+    text-transform: uppercase;
+    font-weight: 100;
+    opacity: 0.7;
+    display: flex;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: black;
+    font-family: Roboto mono;
+  }
+
+  #button {
+    padding: 0.55rem 1.1rem;
+    border-radius: 0.5rem;
+    background-color: rgb(0, 0, 0);
+    color: rgb(254, 255, 250);
+    word-spacing: 0.7em;
+    font-weight: 700;
+    font-size: 0.9em;
+    font-family: Roboto;
+    width: fit-content;
+    text-decoration: none;
+    font-weight: 100;
+  }
+}
+
+@media (min-width: 1080px) {
+  main {
+    padding: 3rem;
+  }
+
+  .veiw-1 {
+    h1 {
+      font-size: 8rem;
+      width: 100%;
+    }
+  }
+}
