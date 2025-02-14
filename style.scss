@@ -268,6 +268,30 @@ svg {
   }
 }
 
+footer{
+  font-family: Roboto Mono;
+  font-size: 1rem;
+  opacity: 0.9;
+  .fisrt-line{
+   p{
+     margin: 2rem 0 0.8rem 10rem;
+     a{
+       color: black;
+     }
+   }
+  }
+  .second-line{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    a{
+     text-decoration: none;
+     color: black; 
+    }
+   }
+}
+
+
 @media (min-width: 1080px) {
   main {
     padding: 3rem;
