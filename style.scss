@@ -30,6 +30,17 @@ main {
 }
 
 nav {
+  .country-circle{
+    display:none;
+  }
+  .option{
+    display: none;
+  }
+
+  .button{
+    display: none;
+  }
+
   .logo {
     display: flex;
     svg {
@@ -53,7 +64,7 @@ nav {
     font-size: 1.1rem;
     .circle {
       padding: 0.4rem 0 0 0.4rem;
-      min-width: 4rem;
+      width: 4rem;
       min-height: 2rem;
       border-radius: 20px;
       border: 1.5px solid black;
@@ -91,13 +102,13 @@ nav {
   }
 
   img {
-    min-width: 100%;
+    width: 100%;
     object-fit: cover;
     object-position: top;
     border-radius: 1rem;
     height: 13rem;
     filter: drop-shadow(0px 0px 6px rgb(0, 0, 0));
-    }
+  }
 }
 
 svg {
@@ -289,7 +300,7 @@ svg {
     margin-bottom: 2rem;
   }
 
-  .page-link {
+  a{
     text-transform: uppercase;
     font-weight: 100;
     opacity: 0.7;
@@ -299,6 +310,7 @@ svg {
     color: black;
     font-family: Roboto mono;
   }
+
 
   #button {
     padding: 0.55rem 1.1rem;
@@ -340,13 +352,318 @@ footer {
 
 @media (min-width: 1080px) {
   main {
-    padding: 3rem;
+    padding: 4rem 14rem;
   }
 
-  .veiw-1 {
+  nav{
+    .option{
+      margin-left: 40.7rem;
+      display: flex;
+      gap: 2rem;
+      margin-top: -2rem;
+      margin-bottom: 1rem;
+      font-size: 0.6rem;
+      font-weight: 100;
+      opacity: 0.6;
+    }
+
+    .button{
+      display: block;
+      padding: 0.55rem 1rem;
+      border-radius: 0.5rem;
+      background-color: rgb(26, 26, 26);
+      color: rgb(254, 255, 250);
+      word-spacing: 0.7em;
+      font-weight: 700;
+      font-size: 0.7em;
+      font-family: Roboto;
+      width: fit-content;
+      text-decoration: none;
+      font-weight: 100;
+      position: absolute;
+      right: 25%;
+      top: 4%;
+    }
+
+    .darkmode{
+      font-size: 1rem;
+      position: absolute;
+      right: 12%;
+      top: 4%;
+      
+      .circle{
+        width: 3rem;
+      }
+    }
+    .logo{
+      position: absolute;
+      top: 6%;
+    }
+    .menu{
+      display: none;
+    }
+    .country-circle {
+      display: flex;
+      gap: 1rem;
+      h2 {
+        font-size: 0.9em;
+        padding: 0.35em;
+        text-align: center;
+        opacity: 0.63;
+        font-family: Roboto Mono;
+        border-radius: 50%;
+        border: 1px solid black;
+        height: 2.1em;
+        width: 2.1em;
+        position: relative;
+        left: 85.6%;
+        margin-top: -2rem;
+      }
+    }
+    .line-4-1{
+      border: 1px solid black;
+      width: 0;
+      height: 2rem;
+      position: relative;
+      left: 96%;
+      margin-top: -2.3rem;
+    }
+    .line-4-2{
+      border: 1px solid black;
+      width: 0;
+      height: 2rem;
+      position: relative;
+      left: 84.45%;
+      margin-top: -2rem;
+    }
+    .line-2 {
+      margin-top: rem;
+    }
+  }
+  body {
+    padding: 0.7rem;
+  }
+  .view-1 {
     h1 {
-      font-size: 8rem;
+      font-size: 5rem;
       width: 100%;
+    }
+    img {
+      width: 100%;
+      height: 35rem;
+    }
+  }
+
+  svg {
+    width: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: -1rem;
+  }
+  .view-2 {
+    display: flex;
+    gap: 10px;
+    .top {
+      width: 270%;
+      p {
+        margin-top: 4rem;
+        font-size: 0.7rem;
+      }
+      h1 {
+        font-size: 5rem;
+        margin-bottom: 18rem;
+        br {
+          display: none;
+        }
+      }
+      .button {
+        font-size: 0.6rem;
+        padding: 0.55rem 1rem;
+        border-radius: 6px;
+      }
+    }
+    .line-line2 {
+      width: 0;
+    }
+    .line:nth-last-child(1) {
+      display: none;
+    }
+    .bottom {
+      margin-left: 1.6rem;
+      h1 {
+        font-size: 1.5rem;
+        margin-top: 1.4rem;
+      }
+      p {
+        margin-top: 0.5rem;
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .line {
+    width: 100%;
+    margin-top: 3rem;
+    border: 1px solid rgba(0, 0, 0, 0.318);
+  }
+
+  .view-3 {
+    display: flex;
+
+    .our-team {
+      width: 40%;
+      height: 40rem;
+      span {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        p {
+          font-size: 1rem;
+          margin-right: 7rem;
+        }
+      }
+    }
+
+    .our-team-members {
+      height: 23rem;
+      margin-left: 1rem;
+    }
+
+    .line-2 {
+      width: 0;
+    }
+    .line-2:nth-last-child(1) {
+      display: none;
+    }
+  }
+
+  .contact {
+    display: flex;
+    position: relative;
+    height: 32rem;
+    .contact-1 {
+      svg {
+        position: absolute;
+        top: 80%;
+      }
+      p {
+        font-size: 0.79em;
+        margin-top: 3rem;
+      }
+      h1 {
+        font-size: 4.2rem;
+        text-shadow: 1px 1px 0 black;
+        margin-top: 0.5rem;
+        transform: scaleX(1.2);
+        margin-left: 4.2rem;
+      }
+    }
+    .line {
+      width: 0%;
+      height: 94%;
+      position: absolute;
+      top: -2%;
+      left: 68%;
+      border: 1px solid rgba(0, 0, 0, 0.318);
+    }
+
+    .contact-2 {
+      h3 {
+        font-size: 1.2rem;
+        margin-top: 2.7rem;
+        margin-left: 13rem;
+        margin-bottom: 23rem;
+      }
+
+      .button {
+        font-size: 0.7rem;
+        margin-left: 13rem;
+        padding: 0.5rem 1rem;
+        background-color: rgb(10, 10, 10);
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .view-4{
+    display : flex;
+    justify-content: space-between;
+    .address {
+      .logo {
+        svg {
+          height: 4rem;
+        }
+        p {
+          margin-top: 4.4rem;
+          margin-left: 0.4rem;
+          font-size: 1.3rem;
+        }
+        }
+        .country-circle{
+          h2 {
+            font-size: .8rem;
+            margin-top: 4rem;
+            margin-left: 0.3rem;
+            margin-right: 0.3rem;
+            font-weight: 700;
+          }
+    }}
+    .line {
+      width: 0%;
+      border: 1px solid rgba(0, 0, 0, 0.318);
+      margin-left: 10rem;
+      margin-right: -13rem;
+    }
+    .line-2{
+      display: none;
+    }
+
+    h1{
+      font-size: 1.1rem;
+      font-weight: 400;
+      margin-top: 4rem;
+    }
+
+    #button{
+      font-size: 0.7rem;
+      padding: 0.4rem 1rem;
+      background-color: rgb(11, 11, 11);
+      opacity: 1;
+    }
+    a{
+      font-size: .81rem;
+      width:fit-content
+    }
+    a {
+      position: relative;
+      text-decoration: none;
+      color: black;
+      padding-bottom: 5px;
+      background-image: linear-gradient(to right, black, black);
+      background-size: 0% 2px;
+      background-repeat: no-repeat;
+      background-position: left bottom;
+      transition: background-size 0.3s ease-in-out;
+    }
+  
+    a:hover {
+      background-size: 100% 2px;
+    }
+  
+  }
+
+  footer{
+    .fisrt-line{
+      p{
+        margin: 1.5rem -0.1rem;
+        font-size: 0.8rem;
+      }
+    }
+    .second-line{
+      a{
+        font-size: 0.7rem;
+      }
+      margin-right: -80rem;
+      margin-top: -2rem;
     }
   }
 }
