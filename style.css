@@ -30,6 +30,45 @@ main {
   border: 1px solid black;
 }
 
+nav .logo {
+  display: flex;
+}
+nav .logo svg {
+  width: 3rem;
+  margin-top: -2rem;
+  padding-bottom: -2rem;
+}
+nav .logo p {
+  margin-top: -1.4rem;
+  margin-left: 0.8rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+nav .darkmode {
+  position: absolute;
+  right: 20%;
+  top: 4.8%;
+  font-size: 1.1rem;
+}
+nav .darkmode .circle {
+  padding: 0.4rem 0 0 0.2rem;
+  min-width: 4rem;
+  min-height: 2rem;
+  border-radius: 20px;
+  border: 1.5px solid black;
+}
+nav .menu {
+  position: absolute;
+  top: 4.7%;
+  right: 10%;
+  font-size: 1.9rem;
+  opacity: 0.5;
+}
+nav .line-2 {
+  margin-top: 1rem;
+}
+
 .view-1 {
   width: 100%;
 }
@@ -37,6 +76,8 @@ main {
   font-weight: 400;
   opacity: 0.8;
   margin-bottom: 1rem;
+  margin-top: 1.7rem;
+  text-transform: uppercase;
 }
 .view-1 h1 {
   font-weight: 500;
@@ -59,11 +100,11 @@ svg {
 }
 
 .view-2 .top p {
-  margin-top: 2em;
+  margin-top: 1.7em;
 }
 .view-2 .top h1 {
   font-weight: 500;
-  margin-top: 1.4rem;
+  margin-top: 0.5rem;
   font-size: 3rem;
   transform: scaleY(0.89);
   width: 100%;
