@@ -52,7 +52,7 @@ nav .darkmode {
   font-size: 1.1rem;
 }
 nav .darkmode .circle {
-  padding: 0.4rem 0 0 0.2rem;
+  padding: 0.4rem 0 0 0.4rem;
   min-width: 4rem;
   min-height: 2rem;
   border-radius: 20px;
@@ -75,7 +75,7 @@ nav .line-2 {
 .view-1 p {
   font-weight: 400;
   opacity: 0.8;
-  margin-bottom: 1rem;
+  margin-bottom: 0.3rem;
   margin-top: 1.7rem;
   text-transform: uppercase;
 }
@@ -88,10 +88,14 @@ nav .line-2 {
   margin-bottom: 1rem;
 }
 .view-1 img {
-  width: 100%;
+  min-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
   border-radius: 1rem;
+  height: 13rem;
+  filter: drop-shadow(0px 0px 6px rgb(0, 0, 0));
 }
 
 svg {
