@@ -7,7 +7,7 @@ FYLLA-Website is a practice project built to demonstrate skills in HTML, SCSS, a
 
 This website is designed to provide information about our golf club, including facilities, services, and events. It features a responsive layout, easy navigation, and engaging animations to enhance the user experience.
 
-![Golf Club](https://github.com/SazzzNiziyan/FYLLA-Website/blob/515497294d10f7e707885445e0b3fd48cb6cc4c7/Screen%20Recording%202025-02-15%20052227.mp4))
+![Golf Club](https://github.com/SazzzNiziyan/FYLLA-Website/blob/d3fdd8346f5c657e27bcf8e7ef358cdba82d4b7a/Untitled%20video%20-%20Made%20with%20Clipchamp.gif))
 
 ## Table of Contents
 - [Installation](#installation)
